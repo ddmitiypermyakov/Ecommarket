@@ -5,5 +5,8 @@ from .models import *
 
 class ImageS(ListView):
     model = Notebook
-    template_name = 'index.html'
+    template_name = 'base.html'
     context_object_name = 'product'
+
+def test_view(request):
+    return(request,'base.html')
